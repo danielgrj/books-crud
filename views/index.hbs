@@ -1,0 +1,10 @@
+<div class="row">
+  {{#each books}}
+  <div class="col-4">
+    <h3>{{this.title}} | {{this.author}}</h3>
+    <span>{{this.description}}</span>
+    <small>{{this.raiting}}</small>
+    <a href="/edit-book?bookid={{this._id}}">Edit</a>
+  </div>
+  {{/each}}
+</div>
